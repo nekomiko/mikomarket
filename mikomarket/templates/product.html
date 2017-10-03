@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/static/css/style.css" rel="stylesheet" type="text/css">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="layout">
+<ul class="n-breadcrumbs" id="n-breadcrumbs"><li class="n-breadcrumbs__item"><a class="link" title="Товары" href="/">Товары</a></li></ul>
+
+<h1 class="title title_size_22">{{ product.name }}</h1>
+		<div class="column-wrapper">
+
+			<div class="column n-summary__col_size_4">
+				<img class="n-gallery__image image" src="/static/img/full/{{product.id}}.jpg" alt="{{product.name}}" title="{{product.name}}"/>
+                        </div>
+
+			<div class="column n-summary__col_size_5">
+				<h3 class="n-product-content-block__title">Коротко о товаре</h3>
+				<ul class="n-product-spec-list">
+					{% for spec in product.get_spec_list() %}
+					<li class="n-product-spec-list__item n-product-spec-list__item_type_friendly">{{spec}}</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="column n-summary__col-cpa2 n-summary__col_size_3">
+				<div class="n-product-price-cpa2"><span class="price">{{product.get_price_print()}}&nbsp;₽</span></div>
+			</div>
+		</div>
+		</div>
+
+
+
+
+	</body>
+</html>

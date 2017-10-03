@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/static/css/style.css" rel="stylesheet" type="text/css">
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<div class="layout">
+			{% for product in products %}
+<div class="n-snippet-card snippet-card">
+
+	<div class="snippet-card__view"><a class="snippet-card__image" href="{{ url_for('product_detail', product_id=product.id) }}" title="{{product.name}}"><img class="image" src="/static/img/mini/{{ product.id }}.jpg" title="{{ product.name }}" alt="{{ product.name }}"></a></div>
+
+	<div class="snippet-card__content"><div class="snippet-card__table"><div class="snippet-card__row"><div class="snippet-card__col"><h3 class="snippet-card__header"><a class="link" href="{{ url_for('product_detail', product_id=product.id) }}" title="{{ product.name }}"><span class="snippet-card__header-text">{{ product.name }}</span></a></h3><ul class="snippet-card__desc-list">
+						{% for spec in product.get_spec_list()[:4] %}
+						<li class="snippet-card__desc-item">{{ spec }}</li>
+						{% endfor %}
+					</ul></div></div></div></div>
+
+					<div class="snippet-card__info"><a class="link" href="{{ url_for('product_detail', product_id=product.id) }}"><div class="snippet-card__price"><div class="price">от {{product.get_price_print()}}&nbsp;₽</div></div></a></div>
+</div>
+{% endfor %}
+		</div>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+.column-wrapper {
+	display: flex;
+}
+
+body {
+    font: .8em Arial,Helvetica,sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.n-product-content-block__title {
+    margin-bottom: 9px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+
+.n-summary__col-cpa2 {
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.06),0 2px 2px 0 rgba(0,0,0,.12);
+    align-self: flex-start;
+}
+
+.n-summary__col_size_5 {
+    flex-grow: 5;
+}
+
+
+.n-summary__col_size_4 {
+    flex-grow: 4;
+    margin: 0 36px;
+}
+
+.n-gallery__image {
+    width: 350px;
+}
+
+.n-summary__col_size_3 {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.n-product-price-cpa2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: .2px;
+    color: #222;
+}
+
+.title_size_22 {
+    font-size: 22px;
+}
+
+.layout {
+    width: auto;
+    max-width: 1440px;
+    padding-right: 130px;
+    padding-left: 130px;
+}
+
+.snippet-card {
+    position: relative;
+    color: #404040;
+    display: flex;
+}
+
+.snippet-card__view {
+    flex: 0 0 230px;
+}
+
+.snippet-card__info {
+    flex: 0 0 230px;
+}
+
+.snippet-card__content {
+
+    flex-grow: 1
+}
+.snippet-card__price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #2b2b2b;
+}
+
+.snippet-card__header {
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #202020;
+}
+
+.snippet-card__row {
+    display: table-row;
+}
+
+.snippet-card__row:first-child .snippet-card__col {
+    vertical-align: top;
+}
+.snippet-card__col {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.snippet-card__desc-list {
+    line-height: 1.5em;
+    margin: 7px 0 0;
+}
+
+.snippet-card__image {
+    display: block;
+    padding: 30px 0;
+}
+
+
+.snippet-card__image .image {
+
+    display: block;
+    max-width: 140px;
+    max-height: 140px;
+    margin: 0 auto;
+
+}
+
+.snippet-card__header-text {
+    color: #33c;
+    border-bottom: 1px solid #9999e5;
+    transition: color .25s ease-out,border-color .25s ease-out;
+}
+
+.snippet-card__header {
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #202020;
+}
+
+.link {
+    text-decoration: none;
+    outline: 0;
+    touch-action: manipulation;
+}
+
+.n-breadcrumbs {
+    color: #404040;
+    font-size: 19px;
+}
+
+.n-breadcrumbs__item:first-child {
+    padding-left: 0;
+}
+
+.n-breadcrumbs__item, .n-breadcrumbs__item .link {
+    position: relative;
+    display: inline-block;
+    padding: 5px 6px 5px 10px;
+        padding-left: 10px;
+}
